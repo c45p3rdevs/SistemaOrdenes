@@ -15,7 +15,7 @@ $row = $result->fetch_assoc();
 
 
 
-    Geoportal<b> PERS
+    MDGSP<b> 
     </b>
   </div>
   <div class="navbar-collapse collapse">

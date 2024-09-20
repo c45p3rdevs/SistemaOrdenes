@@ -20,7 +20,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 	<br><br><br>
 	<div class="container">
 		<div class="panel panel-primary">
-			<div id="titulo" class="panel panel-heading">Login Geoportal PERS Orinoquía
+			<div id="titulo" class="panel panel-heading">MDGSP
 			</div>
 			<div class="panel panel-body">
 				<div id="imagen" style="text-align: center;">
