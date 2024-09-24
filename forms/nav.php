@@ -28,7 +28,7 @@ $row = $result->fetch_assoc();
 
           <img src="../img/icons/user_icon.png" class="user-image" alt="User Image">
           <b>
-            MI PERFIL
+            Mi Perfil
 
           </b>
         </a>
@@ -79,18 +79,18 @@ $row = $result->fetch_assoc();
 
 </div>
 <div class="navbar nav-header">
-  <a href="inicio.php"><img class="avatar" src="../../img/PERS_ori_icon.png" alt="pers icon"></a>
+  <a href="inicio.php"><img class="avatar" src="https://seguridad.guanajuato.gob.mx/wp-content/uploads/2021/05/logo-dgsp.jpg" alt="MDGSP"></a>
   <div class="navbar navbar-inverse">
     <!-- Barra lateral izquierda -->
     <ul class="nav navbar-nav">
       <li><a href="inicio.php">Inicio</a></li>
 
-      <li><a href="depart.php">Lista de departamentos</a></li>
+      <li><a href="depart.php">Lista de Áreas</a></li>
 
 
       <li><a href="recursos.php">Lista de recursos</a></li>
 
-      <li><a href="capas.php">Lista de capas</a></li>
+      <li><a href="capas.php">Mantenimientos</a></li>
 
       <?php
 
@@ -114,8 +114,8 @@ $row = $result->fetch_assoc();
 </div>
 
 <footer class="footer">
-  <strong>Copyright © 2020
-    <a href="http://observatorio.unillanos.edu.co/observatorio/">Observatorio del Territorio</a>.
+  <strong>Copyright © 2024
+    <a href="http://observatorio.unillanos.edu.co/observatorio/">DGSP</a>
     Todos los derechos reservados.
   </strong>
 </footer>

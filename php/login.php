@@ -4,7 +4,7 @@ include 'conexion.php';
 
 $usuario = $con->real_escape_string(strip_tags($_POST["usuario"])); //usuario recibido por POST
 $fecha = date("Y-m-d");
-date_default_timezone_set("America/Bogota"); //ajustar horario de reloj a Colombia
+date_default_timezone_set("America/Mexico_City"); //ajustar horario de reloj a Guanjuato, México
 $hora = date('h:i A');
 
 if ($_POST['contraseña']) { //si se recibe un valor de contraseña

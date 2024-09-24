@@ -20,7 +20,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
 		<link href="../css/style_nav.css" rel="stylesheet">
 		<link href="../css/style_ini.css" rel="stylesheet">
-		<link rel="icon" type="image/png" href="../../img/icons/PERS_icon.png" />
+		<link rel="icon" type="image/png" href="../../img/icons/logo1.png" />
 
 	</head>
 

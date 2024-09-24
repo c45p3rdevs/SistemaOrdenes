@@ -14,7 +14,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Editar registros</title>
-		<link rel="icon" type="image/png" href="../../img/icons/PERS_icon.png" />
+		<link rel="icon" type="image/png" href="../../img/icons/logo1.png" />
 
 		<!-- Bootstrap -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">

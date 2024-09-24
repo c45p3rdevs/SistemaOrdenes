@@ -13,18 +13,18 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
-	<link rel="icon" type="image/png" href="../img/icons/PERS_icon.png" />
+	<link rel="icon" type="image/png" href="https://drive.google.com/file/d/1-S-8WxDJOUb9UeK5ycNaLveOgeZ-CmCP/view?usp=sharing" />
 </head>
 
 <body>
 	<br><br><br>
 	<div class="container">
 		<div class="panel panel-primary">
-			<div id="titulo" class="panel panel-heading">MDGSP
+			<div id="titulo" class="panel panel-heading">Manteniemientos DGSP
 			</div>
 			<div class="panel panel-body">
 				<div id="imagen" style="text-align: center;">
-					<img src="../img/PERS_ori_icon.png">
+					<img src="https://seguridad.guanajuato.gob.mx/wp-content/uploads/2021/05/logo-dgsp.jpg">
 				</div>
 				<p id="mensaje"></p>
 				<label id="tusu">Usuario</label>
@@ -64,7 +64,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 			$("#olvidar").show();
 			$('#contra').show();
 			$('#contraseña').show();
-			$("#titulo").text("Login Geoportal PERS Orinoquía");
+			$("#titulo").text("Login MDGSP");
 		}
 		//mostrar y ocultar elementos para restablecer contraseña de un usuario
 		function restablecer() {
