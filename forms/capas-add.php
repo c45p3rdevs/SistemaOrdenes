@@ -35,7 +35,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 
 
 
-				<h2>Lista de capas &raquo; Agregar capa</h2>
+				<h2>Lista de Manteniemientos &raquo; Agregar Mantenimiento</h2>
 				<hr />
 				<?php
 
@@ -57,14 +57,14 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 						$insert->bind_param('ssssii', $ubicacion, $titulo, $ttl, $archivo, $dep, $rec); //agregar variables a la sentencia preparada
 						$insert->execute();
 						$fecha = date("Y-m-d");
-						date_default_timezone_set("America/Bogota"); //ajustar horario de reloj a Colombia
+						date_default_timezone_set("America/Mexico_city"); //ajustar horario de reloj 
 						$hora = date("h:i A");
 						$nom = $_SESSION['name']; //obtener nombre de usuario de la sesión activa
 						$recu = getNrec($con, $rec); //obtener nombre de recurso
 						$depa = getNdep($con, $dep); //obtener nombre de departamento
 
 						//agregar acción de agregar capa al historial de acciones de usuarios
-						$con->query("INSERT INTO `historial`(`usuario`, `accion`, `valor`, `fecha`, `hora`) VALUES ('$nom','Agregó una capa al recurso $recu del departamento $depa','- $ubicacion<br>- $titulo','$fecha','$hora')");
+						$con->query("INSERT INTO `historial`(`usuario`, `accion`, `valor`, `fecha`, `hora`) VALUES ('$nom','Agregó un servicio al recurso $recu del area $depa','- $ubicacion<br>- $titulo','$fecha','$hora')");
 						echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Los datos han sido guardados con éxito.</div>';
 						$insert->close();
 						$con->commit();
@@ -77,31 +77,31 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 				?>
 				<form class="form-horizontal" action="" method="post" onsubmit="return checkSubmit();">
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Ubicacion</label>
+						<label class="col-sm-3 control-label">Ubicacion / Dependencia</label>
 						<div class="col-sm-4">
-							<input type="text" name="ubicacion" class="form-control" placeholder="Ubicacion" title="Debe ingresar la localizacion de la capa en Geoserver del espacio PERS" required>
+							<input type="text" name="ubicacion" class="form-control" placeholder="Ubicacion / Dependencia" title="Debe ingresar la localizacion de la capa en Geoserver del espacio PERS" required>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Titulo de la capa</label>
+						<label class="col-sm-3 control-label">Nombre del Técnico</label>
 						<div class="col-sm-4">
-							<input type="text" name="titulo" class="form-control" placeholder="Titulo de la capa" title="Debe ingresar un nombre de la capa a mostrar" required>
+							<input type="text" name="titulo" class="form-control" placeholder="Nombre del Técnico" title="Debe ingresar un nombre de la capa a mostrar" required>
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Titulo de la leyenda</label>
+						<label class="col-sm-3 control-label">Datos del Equipo</label>
 						<div class="col-sm-4">
-							<input type="text" name="ttl" class="form-control" placeholder="titulo de la leyenda">
+							<input type="text" name="ttl" class="form-control" placeholder="Datos del Equipo">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Archivo asociado</label>
+						<label class="col-sm-3 control-label">Nombre del Resguardante</label>
 						<div class="col-sm-4">
-							<input type="text" name="archivo" class="form-control" placeholder="Archivo">
+							<input type="text" name="archivo" class="form-control" placeholder="Resguardante">
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Departamento</label>
+						<label class="col-sm-3 control-label">Área</label>
 						<div class="col-sm-4">
 							<select name="dep" class="selectpicker">
 								<!--agregar los nombres de todos los departamentos a selector-->
@@ -110,7 +110,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-sm-3 control-label">Recurso</label>
+						<label class="col-sm-3 control-label">Servicio</label>
 						<div class="col-sm-4">
 							<select name="rec" class="selectpicker">
 								<!--agregar los nombres de todos los recursos a selector-->

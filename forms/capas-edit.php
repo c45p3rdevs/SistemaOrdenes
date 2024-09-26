@@ -32,7 +32,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 				$nik = $con->real_escape_string($_GET["nik"]); //guardar valor del id recibido
 				?>
 
-				<h2>Capas a mostrar &raquo; Editar capas</h2>
+				<h2>Mantenimientos a mostrar &raquo; Editar Mantenimiento</h2>
 				<hr />
 
 				<?php

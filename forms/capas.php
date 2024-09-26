@@ -21,15 +21,19 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/style_nav.css" rel="stylesheet">
 		<link href="../css/style_ini.css" rel="stylesheet">
-
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontawesome5-fullcss@1.1.0/css/all.min.css"> 
 	</head>
 
 	<body>
 		<div class="loader"></div>
 		<div class="web-page">
 			<div class="content">
-				<h2>Lista de Servicios a mostrar</h2>
-				<a href="capas-add.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un Servicio </a>
+				<h2>Lista de Manteniemientos a mostrar</h2>
+				<a href="capas-add.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un Mantenimiento </a>
+				<div class="text-right mb-2">
+				<a href="/forms/fpdf/PruebaV.php" target="_blank" class="btn btn-danger"><i class="fa fa-file-pdf"></i>Generar Reporte</a>
+				</div>
 
 				<hr />
 
@@ -85,8 +89,8 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 						<thead>
 							<tr>
 								<th>Ubicación / Dependencia</th>
-								<th>Titulo del Servicio</th>
-								<th>Título de la leyenda</th>
+								<th>Nombre del Técnico</th>
+								<th>Datos del Equipo</th>
 								<th>Nombre del Resguardante</th>
 								<th>Departamento</th>
 								<th>Servicio</th>
