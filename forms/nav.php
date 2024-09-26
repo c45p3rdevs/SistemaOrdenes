@@ -88,7 +88,7 @@ $row = $result->fetch_assoc();
       <li><a href="depart.php">Lista de Áreas</a></li>
 
 
-      <li><a href="recursos.php">Lista de recursos</a></li>
+      <li><a href="recursos.php">Lista de Servicios</a></li>
 
       <li><a href="capas.php">Mantenimientos</a></li>
 

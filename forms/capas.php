@@ -14,7 +14,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Datos de Capas</title>
+		<title>| Crear Mantenimiento |</title>
 		<link rel="icon" type="image/png" href="../../img/icons/logo1.png" />
 
 		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
@@ -28,8 +28,8 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<div class="loader"></div>
 		<div class="web-page">
 			<div class="content">
-				<h2>Lista de capas a mostrar</h2>
-				<a href="capas-add.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar una capa </a>
+				<h2>Lista de Servicios a mostrar</h2>
+				<a href="capas-add.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un Servicio </a>
 
 				<hr />
 
@@ -84,12 +84,12 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th>Ubicación</th>
-								<th>Titulo de la capa</th>
+								<th>Ubicación / Dependencia</th>
+								<th>Titulo del Servicio</th>
 								<th>Título de la leyenda</th>
-								<th>Archivo asociado</th>
+								<th>Nombre del Resguardante</th>
 								<th>Departamento</th>
-								<th>Recurso</th>
+								<th>Servicio</th>
 								<th>Acciones</th>
 							</tr>
 						</thead>

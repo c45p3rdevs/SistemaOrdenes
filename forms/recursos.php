@@ -28,8 +28,8 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<div class="loader"></div>
 		<div class="web-page">
 			<div class="content">
-				<h2>Lista de recursos</h2>
-				<a href="dr-add.php?lista=2" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un recurso </a>
+				<h2>Lista de Servicios</h2>
+				<a href="dr-add.php?lista=2" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un Servicio </a>
 
 				<hr />
 				<?php

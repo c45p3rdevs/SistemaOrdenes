@@ -43,7 +43,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 					<hr />
 				<?php
 				} else if ($lista == 2) {
-				?> <h2>Lista de recursos &raquo; Agregar recurso</h2>
+				?> <h2>Lista de Servicios &raquo; Agregar Servicio</h2>
 					<hr />
 				<?php	} else {
 				?>

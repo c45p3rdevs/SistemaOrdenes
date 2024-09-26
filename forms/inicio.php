@@ -16,8 +16,8 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>MDGSP</title>
-		<link rel="icon" type="image/png" href="../../img/icons/logo1.png" />
+		<title>Mantenimiento DGSP</title>
+		<link rel="icon" type="image/png" href="../../img/icons/favicon.ico" />
 		<!-- Bootstrap -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
@@ -36,7 +36,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 								<div class="card-header text-center">
 									Áreas
 								</div>
-								<h2 class="text-center"><?php echo nX($con, "departamentos") //mostrar cantidad de departamentos  
+								<h2 class="text-center"><?php echo nX($con, "departamentos") //mostrar cantidad de áreas en DGSP
 														?></h2>
 								<div class="card-footer text-muted text-center">
 									<a href="depart.php" class="btn btn-primary ">Ver Áreas</a>
@@ -48,12 +48,12 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 						<div class="card bg-c-yellow order-card">
 							<div class="card-block">
 								<div class="card-header text-center">
-									Recursos
+									Servicios
 								</div>
 								<h2 class="text-center"><?php echo nX($con, "recursos") //mostrar cantidad de recursos  
 														?></h2>
 								<div class="card-footer text-muted text-center">
-									<a href="recursos.php" class="btn btn-primary ">Ver Recursos</a>
+									<a href="recursos.php" class="btn btn-primary ">Ver Servicios</a>
 								</div>
 							</div>
 						</div>

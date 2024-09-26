@@ -37,7 +37,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 				<p></p>
 				<div id="botones">
 					<span class="btn btn-primary" id="entrarSistema">Entrar</span>
-					<span class="btn btn-danger" id="olvidar">¿Olvió su contraseña?</span>
+					<span class="btn btn-danger" id="olvidar">¿Olvidó su contraseña?</span>
 					<span class="btn btn-primary" id="restaurar">Restaurar contraseña</span>
 					<span class="btn btn-danger" id="volver">Volver</span>
 				</div>
