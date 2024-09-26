@@ -8,10 +8,10 @@ class PDF extends FPDF
    // Cabecera de página
    function Header()
    {
-      include 'conexion.php';//llamamos a la conexion BD
+      //include 'php/conexion.php';//llamamos a la conexion BD
 
-       $consulta_info = $conexion->query(" select * from capas ");//traemos datos de la empresa desde BD
-       $dato_info = $consulta_info->fetch_object();
+       //$consulta_info = $conexion->query(" select * from capas ");//traemos datos desde BD
+       //$dato_info = $consulta_info->fetch_object();
       $this->Image('logo1.png', 185, 5, 20); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
       $this->SetFont('helvetica', 'B', 19); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
       $this->Cell(45); // Movernos a la derecha
@@ -42,7 +42,7 @@ class PDF extends FPDF
       /* TELEFONO */
       $this->Cell(110);  // mover a la derecha
       $this->SetFont('Arial', 'B', 10);
-      $this->Cell(85, 10, utf8_decode("Sucursal : "), 0, 0, '', 0);
+      $this->Cell(85, 10, utf8_decode("DEPARTAMENTO : "), 0, 0, '', 0);
       $this->Ln(10);
 
       /* TITULO DE LA TABLA */
@@ -50,7 +50,7 @@ class PDF extends FPDF
       $this->SetTextColor(228, 100, 0);
       $this->Cell(50); // mover a la derecha
       $this->SetFont('Arial', 'B', 15);
-      $this->Cell(100, 10, utf8_decode("REPORTE DE HABITACIONES "), 0, 1, 'C', 0);
+      $this->Cell(100, 10, utf8_decode("REPORTE DE MANTENIMIENTOS "), 0, 1, 'C', 0);
       $this->Ln(7);
 
       /* CAMPOS DE LA TABLA */
@@ -95,10 +95,10 @@ $i = 0;
 $pdf->SetFont('Arial', '', 12);
 $pdf->SetDrawColor(163, 163, 163); //colorBorde
 
-$consulta_reporte_alquiler = $conexion->query(" select * from capas ");
+//$consulta_reporte_alquiler = $conexion->query(" select * from capas ");
 
-while ($datos_reporte = $consulta_reporte_alquiler->fetch_object()) {      
-   }
+//while ($datos_reporte = $consulta_reporte_alquiler->fetch_object()) {      
+//   }
 $i = $i + 1;
 /* TABLA */
 $pdf->Cell(18, 10, utf8_decode("Ubicacion"), 1, 0, 'C', 0);
