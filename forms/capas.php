@@ -32,9 +32,16 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 				<h2>Lista de Manteniemientos a mostrar</h2>
 				<a href="capas-add.php" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Agregar un Mantenimiento </a>
 				<div class="text-right mb-2">
-				<a href="/forms/fpdf/PruebaV.php" target="_blank" class="btn btn-danger"><i class="fa fa-file-pdf"></i>Generar Reporte</a>
+				<a href="fpdf/PruebaV.php" target="_blank" class="btn btn-light"><i class="fa fa-file-pdf"></i>Generar Reporte</a>
 				</div>
-
+                 
+				<style>
+					.btn-light {
+						background-color: #c50d66;
+						color: white;
+						
+					}
+				</style>
 				<hr />
 
 				<?php
