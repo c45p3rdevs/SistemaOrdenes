@@ -97,25 +97,28 @@ $pdf->SetFont('Arial', '', 12);
 $pdf->SetDrawColor(163, 163, 163); //colorBorde
 
 
-$consulta_reporte_alquiler = $con->query(" select ubicacion, titulo, ttl_lynd from capas ");
+$consulta_reporte_alquiler = $con->query(" select ubicacion, titulo, ttl_lynd from capas  ");
 //var_dump($con);
 
 //var_dump($consulta_reporte_alquiler);
 $arreglo = [];
 $n=0;
 while ($datos_reporte = $consulta_reporte_alquiler->fetch_object()) {      
-   $arreglo[$n]=['ubicacion'=>$datos_reporte->ubicacion,'titulo'=>$datos_reporte->titulo,'campo'=>$datos_reporte->tt_lynd];
+   $arreglo[$n]=['ubicacion'=>$datos_reporte->ubicacion,'titulo'=>$datos_reporte->titulo,'ttl_lynd'=>$datos_reporte->ttl_lynd];
    $n++;
-   }
-  echo $arreglo[0]['ubicacion'];
-$i = $i + 1;
-/* TABLA */
-$pdf->Cell(18, 10, utf8_decode("Ubicacion"), 1, 0, 'C', 0);
-$pdf->Cell(20, 10, utf8_decode("Nombre del Tecnico"), 1, 0, 'C', 0);
+$pdf->Cell(18, 10, utf8_decode($datos_reporte->ubicacion), 1, 0, 'C', 0);
+$pdf->Cell(20, 10, utf8_decode($datos_reporte->titulo), 1, 0, 'C', 0);
 $pdf->Cell(30, 10, utf8_decode("Datos del Equipo"), 1, 0, 'C', 0);
 $pdf->Cell(25, 10, utf8_decode("Nombre del Resguardante"), 1, 0, 'C', 0);
 $pdf->Cell(70, 10, utf8_decode("Departamento"), 1, 0, 'C', 0);
 $pdf->Cell(25, 10, utf8_decode("Servicio"), 1, 1, 'C', 0);
+   }
+  //echo $arreglo[0]['ubicacion'];
+  //echo $arreglo[0]['titulo'];
+  
+$i = $i + 1;
+/* TABLA */
+
 
 
 $pdf->Output('Prueba.pdf', 'I');//nombreDescarga, Visor(I->visualizar - D->descargar)
