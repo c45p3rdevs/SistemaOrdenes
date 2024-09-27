@@ -68,7 +68,7 @@ if (isset($_SESSION['id'])) { //verificar que un usuario tiene una sesión activ
 							$ubicacion = $row['ubicacion'];
 							$titulo = $row['titulo'];
 							$fecha = date("Y-m-d");
-							date_default_timezone_set("America/Bogota"); //ajustar horario de reloj a Colombia
+							date_default_timezone_set("America/Bogota"); //ajustar horario de reloj
 							$hora = date('h:i A');
 							$nom = $_SESSION['name'];
 							$recu = getNrec($con, $row['rec']);
